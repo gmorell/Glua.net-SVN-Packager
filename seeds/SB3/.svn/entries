@@ -1,0 +1,114 @@
+9
+
+dir
+1
+http://customaddons.googlecode.com/svn/trunk/Spacebuild
+http://customaddons.googlecode.com/svn
+
+
+
+2010-12-29T15:41:09.531233Z
+1
+stijn.sv
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6a709f25-11a0-695e-31aa-49de4645bbfd
+
+maps
+dir
+
+License gpl-3.0-standalone.htm
+file
+
+
+
+
+2011-01-07T08:22:49.000000Z
+73e8f0812b4b4d0b4fb8de1000a63699
+2010-12-29T15:41:09.531233Z
+1
+stijn.sv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+37098
+
+materials
+dir
+
+lua
+dir
+
+models
+dir
+
+particles
+dir
+
+Docs
+dir
+
+info.txt
+file
+
+
+
+
+2011-01-07T08:22:49.000000Z
+dae4481450bee41f150063b926b07ed7
+2010-12-29T15:41:09.531233Z
+1
+stijn.sv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+156
+

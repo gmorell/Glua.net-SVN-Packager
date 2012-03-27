@@ -1,0 +1,12 @@
+/* CSS STYLESHEET FOR IE */
+
+.bottle{
+    background: url("/common/imgs/bottle.png");
+    width:215px;
+    height:325px;
+/*    display:none;*/
+    position:absolute;
+    margin-left:-270px;
+    margin-top:-120px;
+    z-index:2;
+}

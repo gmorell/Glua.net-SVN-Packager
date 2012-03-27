@@ -1,0 +1,104 @@
+[FORMAT]
+--------------------
+--DATE--
+[Description] @name -- explination.
+--------------------
+
+--12/04/2010 @meeces2911
+Moved config from lua file into the stargate user_config.ini file,
+therefore this pack is now fully relient on aVoN's Stargate mod.
+
+Removed unused models and materials
+Updated spawnlist to include all the models
+Removed Admin check from all ents spawned from under the Stargate Tab (for now...)
+
+Ancient Gun
+[CHANGED] config to work with user_config.ini
+
+##### ENT specific changes #####
+
+Naquadah Bottle
+[FIXED] autowire and autoweld.
+[CHANGED] config to work with user_config.ini
+
+ZPM Mk2
+[CHANGED] some english :P
+[REMOVED] lisence, as global one is being used
+[FIXED] autowire and autoweld.
+[CHANGED] wire/ls check so it stops the ent being spawned.
+[CHANGED] overload to work with a multi overload by the spawner
+[CHANGED] config to work with user_config.ini
+[FIXED] timer error when zpm was deleted before it overloaded.
+
+ZPM Spawner
+[REMOVED] lisence, as global one is being used
+[ADDED] wire inputs/outputs
+[CHANGED] wire/ls check so it stops the ent being spawned.
+[ADDED] Destroy wire input, destroys spawner and ALL zpm's attached to it (assuming there not depleated)
+[CHANGED] config to work with user_config.ini
+[FIXED] ZPM freeze issue when trying to spawn one when space was full
+[REMOVED] HL2 Model error message.
+[CLEANED] up zpm spawning code.
+
+ZPM Recharger
+[ADDED] charger to recharge zpm, zpm mk2, and naquadah bottle
+Initial release.
+
+EMP Gen
+[CHANGED] config to work with user_config.ini
+
+--12/06/2009-- @meeces2911
+[ADDED] EMP Gen. Newest wire is required, otherwise the radios dont retrieve their number after the emp strike.
+[REMOVED] Random vgui pic
+[ADDED] Updated changelog to reflect svn log. (See below)
+[FIXED] picky picky, spelling mistakes fixed, thanks Lord Hayden.
+[CHANGED] made thanks to col sheapard and others more clear, by adding them to the info.txt, even tho they were CLEARLY thanked in the shared.lua for the relevant sent. 
+[ADDED] Credit to Catdaemon for the 302, based of his code.
+[REMOVED] Removed Non essential files.. as some people seem to be getting errors, on lower gfx cards/settings.
+
+--13/04/2009-- @meeces2911
+[FIXED] Fixed Mckays Spelling errors, when he tried to add micropro's stunner model (WorldModel)
+[ADDED] Added the Naquadah bottle to the config
+
+--07/04/2009-- @meeces2911
+[ADDED] Added some beta menu things .. most arn't used yet, but may beuseful to other people
+[CHANGED] A Colour value to look more ancienty
+[FIXED] Fixed some errors registering ents to our pack, and use config values
+
+--06/04/2009-- @meeces2911
+[FIXED] Mckays Bugs for the Ancient Weapon.
+[ADDED] More config values to almost everything. (Explained Below... ish)
+[ADDED] config value to change the colour of the 'bullet' for the AW.
+[ADDED] config values for the ZPMMk2.
+[ADDED] ZPMMk2 limit for spawning them. ADMIN and SUPERADMIN are effected now. (as this is going to be an admin thing anyway)
+[CHANGED] the spawn position of the 302, now it doesnt squish you as much.
+[CHANGED] some messages in the ZPM Spawner.
+[CHANGED] Made the explosion bigger for Mk2, and again, made it into a config value.
+
+CONFIG VALUES
+these are stored in the file:
+lua/autorun/MckaysPack.lua
+Please only edit between the marked lines!
+
+
+--03/02/2009-- @meeces2911
+[ADDED] LS2 and LS3 Support to the ZPM Spawner.
+[ADDED] Global Table for MckaysPack, future ents can make use of this.
+[ADDED] A clientside script for ULX/ULIB Private Message, look under Utilities.
+[ADDED] A Flyable 302. Still a WIP.
+[CHANGED] ZPM Spawner, ZPM Mk2 Limit.
+[FIXED] Naquadah bottle ? seemed to work fine for me, but this might help.
+[FIXED] HL2:EP2 error message on ZPM Spawner, showing up when client had HL2:EP2 but server did not. Removed until further notice.
+
+--06/01/2009-- @meeces2911
+[FIXED] ZPM Mk2 over energy usage, and changed disable to ONLY when when NOT depleted.
+[ADDED] Naquadah cell (+fixed and changed lots of stuff to do with it, in Beta svn, PM me if you want to know it:p)
+[CHANGED] Naquadah cell uses avons stool, rather than ent spawning.
+[CHANGED] Ancient Gun sounds, sounds better i think :p
+[and a whole lot of little bits not work mentioning]
+
+--25/12/2008-- @meeces2911
+[FIXED] Ammo obtaining display from "#StriderMinigun_ammo" to "Ancient Pulse Ammo" by changing "Striderminigun_ammo"
+to "StriderMinigun_ammo" in cl_init.lua file of Ancient Gun weapon.
+
+--@meeces2911: sorry, yeah. this has been fixed for me, for ages, but for some reason, every time i commited, it didnt register my file as edited. So it didnt work. Thanks tho. :D

@@ -1,0 +1,13 @@
+{% include "header.html" %}
+<div class="content">
+	<div class="white">
+		<h2>{{ item.post_title }}</h2>
+		{{ item.post_content|linebreaks }}
+		<br />
+		<div class="postinfo fright">Posted on {{ item.post_time }} by {{ item.post_author }} under {{ item.post_category }}</div>
+		<div class="clear"></div>
+		
+	</div>
+</div>
+{% include "pfooter.html" %}
+{% include "footer.html" %}

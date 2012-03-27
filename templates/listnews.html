@@ -1,0 +1,11 @@
+{% include "header.html" %}
+<div class="content">
+	<h2 class="white">Latest News</h2>
+	<ul class="white">
+		{% for news in newsitems %}
+			<li><a href="/news/{{ news.post_slug }}/">{{ news.post_title }}</a> under {{ news.post_category }} </li>
+		{% endfor %}
+	</ul>
+</div>
+{% include "pfooter.html" %}
+{% include "footer.html" %}

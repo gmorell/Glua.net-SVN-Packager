@@ -1,0 +1,10 @@
+"AddonInfo"
+{
+	"name"		"Stargate Resources"
+	"version"	"1.0"
+	"up_date"	"12th February, 2008"
+	"author_name"	"aVoN"
+	"author_email"	""
+	"author_url"	""
+	"info"		"Models,Materials,Sounds and other shit which is NOT lua"
+}

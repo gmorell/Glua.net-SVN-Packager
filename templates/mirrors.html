@@ -1,0 +1,17 @@
+{% include "header.html" %}
+<div class="content">
+	<div class="white">
+		<h1> Mirror List </h1>
+		Glua.net is eternally grateful to its mirror providers, here's a list of our current providers:
+		{% for mirror in mirrors %}
+			<div class="mirroritem">
+				<a href="{{mirror.url}}">
+					<img src="/common/mirrors/{{mirror.name}}.png" width="375" height="150"/>
+				</a>
+			</div>
+		{% endfor %}
+		<div class="clear"></div>
+	</div>
+</div>
+{% include "pfooter.html" %}
+{% include "footer.html" %}

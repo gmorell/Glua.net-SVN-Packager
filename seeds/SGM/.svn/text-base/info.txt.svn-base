@@ -1,0 +1,32 @@
+"AddonInfo"
+{
+	"name"		"Stargate Mod Pack"
+	"version"	"6"
+	"up_date"	"FINAL"
+	"author_name"	"Mckay and Meeces2911"
+	"author_email"	""
+	"author_url"	""
+	"info"		"
+				This is Mckays Stargate Addon
+
+				If you send me pics of this pack I will pick the best one from each update and use them for that update
+
+				If you need to contact me my steam is Dr.Mckay or Zman115
+
+
+				Extract all into addons folder
+
+
+				I give credit to:
+				Avon(Stargate pack and original coding)
+                                Flyboi(For spawn materials and sounds)(Now helping with LUA too!)
+                                Dr.Mckay(For LUA)
+                                Meeces2911(For LUA) and HL2:EP2 Model Hexing -- Loosly done, just for temp
+                                Zyiannix [nekurrin] (For testing)
+                                LightDeamon (Now helping with LUA)
+				DrFattyJr and Pyro (For Anything related to the Stargate Overloader or the effects used :D)
+				Catdaemon, Kadingir, Col. Shepard for the relevant flying sents.
+
+				
+"
+}

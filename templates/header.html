@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>GLua.net - {{ title }}</title>
+		<meta content="downloads">
+		<link rel="stylesheet" href="/common/css/style.css" type="text/css" /> 
+		<link type="text/css" href="/common/css/cupertino/jquery-ui-1.8.7.custom.css" rel="Stylesheet" />
+		<script type="text/javascript" src="/common/js/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="/common/js/jquery-ui-1.8.7.custom.min.js"></script>
+		{% if pgjs %}
+			<script type="text/javascript" src="/common/js/{{ pgjs }}.js"></script>
+		{% endif %}
+		<script type="text/javascript" src="/common/js/js.js"></script>
+		<!--[if IE]><link rel="stylesheet" href="/common/css/ie.css" type="text/css" /><![endif]--> 
+		<!--[if lt IE 7]>
+			<script defer type="text/javascript" src="/common/js/pngfix.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<div class="fade"></div>
+		<div class="wrap">
+		<div class="badges">
+			<a href="http://mibbit.com/#glua@GameSurge">
+			<img src="/common/imgs/link_irc.png" alt="Chat on IRC" />
+			</a>
+			
+			<a href="http://steamcommunity.com/groups/GLua">
+			<img src="/common/imgs/link_steam.png" alt="Join the steam group" />
+			</a>
+			
+			<a href="http://www.twitter.com/gluadotnet">
+			<img src="/common/imgs/link_twitter.png" alt="Follow GLua on twitter" />
+			</a>
+		</div>
+		<a href="/"><div class="logo"></div></a>
+
+		<a href="/"><div class="bottle"></div></a>
+		<div class="nav">
+			<div class="overs nav_dls fleft">
+				<img class="i" src="/common/imgs/dls.png">
+                                <a href="/dls/"><img class="h" src="/common/imgs/dls_o.png"></a>
+			</div>
+			<!--<a href="/seeds/"><div class="nav_seeds fleft"></div></a>-->
+			<div class="overs nav_contact fleft">
+				<img class="i" src="/common/imgs/contact.png">
+	                        <a href="/about/"><img class="h" src="/common/imgs/contact_o.png"></a>
+			</div>
+			<div class="overs nav_donate fleft">
+				<img class="i" src="/common/imgs/donate.png">
+				<a href="/donate/"><img class="h" src="/common/imgs/donate_o.png"></a>
+			</div>
+		</div>

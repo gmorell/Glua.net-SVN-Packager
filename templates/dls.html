@@ -1,0 +1,47 @@
+{% include "header.html" %}
+	  <div class="dls content">
+	    {% for dl in activedls %}
+	    <div class="dlitem">
+		<div class="dlitemtop ui-corner-top ui-widget-header">
+			<div class="icon ui-state-default ui-corner-all fright ui-button ui-widget dlbutton" id="{{ dl.id }}">
+				<span class="ui-icon ui-icon-arrowthickstop-1-s"></span>
+		    </div>
+		    <div class="icon ui-state-default ui-corner-all fright collapser ui-button ui-widget">
+				<span class="ui-icon ui-icon-triangle-1-s"></span>
+		    </div>
+
+		    <span class="collapset">{{ dl.pkg_shortname }} ({{ dl.pkg_longname }})</span>
+		</div>
+	    <div class="dlitemdetail ui-widget-content"">
+			<a href="{{ dl.pkg_homepage }}">
+				<div class="icon ui-state-default ui-corner-all fright ui-button ui-widget">
+				<span class="ui-icon ui-icon-home"></span>
+				</div>
+			</a>
+			<table>
+				<tr>
+				<td class="pkgi">About</td>
+				<td class="pkgdesc">{{ dl.pkg_description|linebreaksbr }}</td>
+				</tr>
+				<tr>
+				<td class="pkgi">Size</td>
+				<td class="pkgdesc">{{ dl.pkg_size|floatformat:2 }} MB</td>
+				</tr>
+				<tr>
+				<td class="pkgi">Contains</td>
+				<td class="pkgdesc">
+					{% for repo in dl.repolist %}
+					{{ repo.svn_shortname }}:#{{ repo.svn_presentrev }}<br />
+					{% endfor %}
+				</td>
+				</tr>
+
+			</table>
+	    </div>
+	  </div>
+	{% endfor %}
+	<div id="modal" title="Download Type?" style="display:none;"></div>
+	</div>
+	{% include "pfooter.html" %}
+    </div>
+{% include "footer.html" %}

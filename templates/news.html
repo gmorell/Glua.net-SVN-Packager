@@ -1,0 +1,41 @@
+{% include "header.html" %}
+<div class="content">
+<table class="white">
+	<tr>
+		<td rowspan="2">
+			<h2> GLua.net - We Do Things</h2>
+			<ul>
+				<li>GLua.net provides SVN Dumps of many of the popula SVN addons for Garry's Mod which are built at regular intervals.</li>
+				<ul>
+				{% for addon in addonlist %}
+					<li>{{ addon }}</li>
+				{% endfor %}
+				</ul>
+				<li>SVN Seeds of all these addons</li>
+			</ul>
+		</td>
+		<td class="tweets">
+			{% if tweets %}
+				<h3><a href="twitter.com/gluadotnet">Latest Tweets</a></h3>
+				<ul>
+					{% for tweet in tweets %}
+					<li><a href="http://www.twitter.com/gluadotnet/statuses/{{ tweet.id }}/">{{tweet.text }}</a></li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+		</td>
+	</tr>
+	<tr>
+		<td class="newslist">
+			<h3><a href="/news/">News</a></h3>
+				<ul>
+					{% for news in newsitems %}
+					<li><a href="/news/{{ news.post_slug }}/">{{ news.post_title }}</a></li>
+					{% endfor %}
+				</ul>
+		</td>
+	</tr>
+</table>
+</div>
+{% include "pfooter.html" %}
+{% include "footer.html" %}
